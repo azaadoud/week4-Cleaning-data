@@ -1,5 +1,5 @@
 # Introduction
-The script run_analysis.R aims to to process the dataset "Human Activity Recognition Using Smartphones" and process it in order to create a tidy dataset.
+The script run_analysis.R aims to to process the dataset "Human Activity Recognition Using Smartphones" and process it in order to create a tidy dataset. The data was obtained from : https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 
 # The files 
 - 'features_info.txt': Shows information about the variables used on the feature vector.
