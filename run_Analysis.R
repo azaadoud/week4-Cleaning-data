@@ -1,3 +1,6 @@
+#This script load the data from the coursera programming assingment
+# and process it to produce a tidy dataset
+
 # Part 1 : loading and merging the data
 #load training data
 X_train <- read.table("./train/X_train.txt")
