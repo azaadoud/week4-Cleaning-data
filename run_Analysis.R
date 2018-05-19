@@ -26,6 +26,7 @@ data <- cbind(subject, data)
 #merging labels
 labels <- rbind(y_train, y_test)
 data <- cbind(data, labels)
+
 #Part 2 : Extracts only the measurements on the mean and standard deviation
 #retrieve only the columns that contains mean and std
 remaining_columns_id <- grep("mean|std", features[, 2])
@@ -41,4 +42,4 @@ levels(data[, 81]) <- activity[, 2]
 names(data) <- c("Subject", remaining_columns_name, "Activity")
 
 #Part 5 : mean of each column by subject and activity
-data_means <- aggregate(data[2,80], list(data$Subject, data$Activity), mean)
+data_means <- aggregate(data[,2:80], list(data$Subject, data$Activity), mean)
